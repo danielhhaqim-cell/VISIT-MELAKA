@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Melaka Tourism – Accommodation & Travel Info</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+    <div id="toast" class="toast">Added to wishlist ❤️</div>
+
+<header class="header">
+<div class="top-info">
+    🗓️ <span id="date"></span>
+    <span class="divider">|</span>
+    ⏰ <span id="time"></span>
+</div>
+
+    <div class="header-container">
+
+        <div class="logo">
+            📍 <span>JALAN MELAKA</span>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="attraction.html">Attractions</a>
+            <a href="food.html">Food & Culture</a>
+            <a href="accommodation.html" class="active">Accommodation</a>
+            <a href="event.html">Events</a>
+            
+             <!-- Wishlist Counter -->
+    <span class="wishlist-counter">
+        ❤️ <span id="wishlistCount">0</span>
+    </span>
+        </nav>
+
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-slider">
+    <div class="slides active" style="background-image:url('melakabg.jpg');">
+        <div class="hero-content">
+            <h1>Stay & Travel in Melaka</h1>
+            <p>Comfortable Accommodation & Easy Travel Planning</p>
+        </div>
+    </div>
+
+    <div class="slides" style="background-image:url('homestay.jpg');">
+        <div class="hero-content">
+            <h1>Family-Friendly Stays</h1>
+            <p>Hotels, Homestays & Resorts Near Attractions</p>
+        </div>
+    </div>
+
+    <div class="slides" style="background-image:url('transport.jpg');">
+        <div class="hero-content">
+            <h1>Easy Transportation</h1>
+            <p>Accessible Routes for a Stress-Free Journey</p>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience">
+    <h2>Why Stay & Travel in Melaka?</h2><br>
+
+    <div class="experience-grid">
+        <div class="exp-card">
+            <h3>🏨 Comfortable Accommodation</h3>
+            <p>
+                A wide selection of hotels and homestays offering comfort,
+                safety, and facilities suitable for families.
+            </p>
+        </div>
+
+        <div class="exp-card">
+            <h3>🚗 Easy Transportation</h3>
+            <p>
+                Well-connected roads, public buses, and e-hailing services
+                make travelling around Melaka convenient.
+            </p>
+        </div>
+
+        <div class="exp-card">
+            <h3>📍 Strategic Location</h3>
+            <p>
+                Most accommodations are located near tourist attractions,
+                saving time and enhancing the travel experience.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- MAIN -->
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="search-box">
+            <input type="text" placeholder="Ex. hotel, bus, transport">
+            <select>
+                <option>All Categories</option>
+                <option>Hotels & Resorts</option>
+                <option>Homestays</option>
+                <option>Public Transport</option>
+                <option>Travel Tips</option>
+            </select>
+            <button>Search</button>
+        </div>
+
+        <div class="filter">
+            <h4>Country</h4>
+            <p>Malaysia</p>
+
+            <h4>State</h4>
+            <p>Melaka</p>
+
+            <h4>City</h4>
+            <p>Melaka City</p>
+        </div>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+        <p class="result-count">Results 1 – 4 of 4</p>
+
+        <!-- PRICE FILTER -->
+<div class="price-filter">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="budget">Budget</button>
+    <button data-filter="mid">Mid-Range</button>
+    <button data-filter="luxury">Luxury</button>
+</div>
+
+<div class="filter-notification" id="filterNote">
+    Showing: All Products
+</div>
+
+<!-- IMAGE MAP -->
+<h2 class="map-title">Hotel Locations in Melaka</h2>
+
+<img src="melakamap.png"
+     alt="Map showing hotel locations in Melaka"
+     usemap="#melakaMap"
+     class="image-map">
+
+     <map name="melakaMap">
+    <area shape="circle" coords="300,200,20"
+          href="https://www.google.com/maps/place/Swiss-Garden+Hotel+Melaka"
+          target="_blank"
+          alt="Swiss-Garden Hotel Melaka">
+
+    <area shape="circle" coords="350,250,20"
+          href="https://www.google.com/maps/place/Hatten+Hotel+Melaka"
+          target="_blank"
+          alt="Hatten Hotel Melaka">
+
+    <area shape="circle" coords="400,220,20"
+          href="https://www.google.com/maps/place/DoubleTree+by+Hilton+Melaka"
+          target="_blank"
+          alt="DoubleTree by Hilton Melaka">
+</map>
+
+     <!-- ACCOMMODATION VIDEO -->
+<h2 class="video-title">Top 10 Best Hotels in Melaka</h2>
+
+<figure class="video-wrapper">
+    <video controls>
+        <source src="top10.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <figcaption class="video-caption">
+        Video Source: Travel Vlog Channel (YouTube).  
+        Used for educational purposes only.
+    </figcaption>
+</figure>
+
+  <!-- ================= ACCOMMODATION CARDS ================= -->
+    <div class="card" data-price="mid">
+        <img src="swissgarden.jpeg" alt="Swiss-Garden Hotel Melaka">
+        <div class="card-info">
+            <h3>Swiss-Garden Hotel Melaka</h3>
+            <div class="best-for family">👨‍👩‍👧 Family Friendly</div>
+            <p>Modern hotel offering easy access to Melaka’s attractions.</p>
+            <div class="amenities">
+                <span>📶 WiFi</span><span>🅿️ Parking</span><span>🍳 Breakfast</span>
+            </div>
+            <div class="price">From <strong>RM 220 / night</strong></div>
+            <span class="location">📍 Melaka City</span>
+        </div>
+        <div class="card-actions">
+            ⭐⭐⭐⭐☆
+            <a href="https://www.swissgarden.com/hotel-melaka/?utm_source=glopss&utm_medium=affiliate&utm_campaign=campaign&transaction_id=CjwKCAiAybfLBhAjEiwAI0mBBkEeQVaPKOLyC_ZMdy8gCW53jxbg_kr6p8A4uEN2knx8Mhlky2E2YxoCJ1sQAvD_BwE&gad_source=1&gad_campaignid=7865962760&gbraid=0AAAAADhBcW-8m5Wn4-IxIJoufAtdoHANj&gclid=CjwKCAiAybfLBhAjEiwAI0mBBkEeQVaPKOLyC_ZMdy8gCW53jxbg_kr6p8A4uEN2knx8Mhlky2E2YxoCJ1sQAvD_BwE" target="_blank">Website</a>
+            <a href="https://maps.app.goo.gl/iVH1Qi9DFB3QcTtBA" target="_blank">View Map</a>
+        </div>
+        <div class="wishlist">
+    <span class="heart" data-liked="false">♡</span>
+</div>
+    </div>
+
+<div class="card" data-price="mid">
+        <img src="hatten.jpeg" alt="Hatten Hotel Melaka">
+        <div class="card-info">
+            <h3>Hatten Hotel Melaka</h3>
+            <div class="best-for business">💼 Business & Leisure</div>
+            <p>Located near shopping malls and attractions.</p>
+            <div class="amenities">
+                <span>📶 WiFi</span><span>🏊 Pool</span><span>🍳 Breakfast</span>
+            </div>
+            <div class="price">From <strong>RM 250 / night</strong></div>
+            <span class="location">📍 Melaka City</span>
+        </div>
+        <div class="card-actions">
+            ⭐⭐⭐⭐☆
+            <a href="https://www.hattenhotelmelaka.com/" target="_blank">Website</a>
+            <a href="https://maps.app.goo.gl/CRaNhDQs3w4Nae1T8" target="_blank">View Map</a>
+        </div>
+        <div class="wishlist">
+    <span class="heart" data-liked="false">♡</span>
+</div>
+    </div>
+
+ <!-- DoubleTree -->
+    <div class="card" data-price="luxury">
+        <img src="doubletree.jpeg" alt="DoubleTree by Hilton Melaka">
+        <div class="card-info">
+            <h3>DoubleTree by Hilton Melaka</h3>
+            <div class="best-for luxury">💎 Luxury Stay</div>
+            <p>Premium beachfront hotel with excellent services.</p>
+            <div class="amenities">
+                <span>📶 WiFi</span><span>🏊 Pool</span><span>🍽️ Restaurant</span>
+            </div>
+            <div class="price">From <strong>RM 420 / night</strong></div>
+            <span class="location">📍 Melaka City</span>
+        </div>
+        <div class="card-actions">
+            ⭐⭐⭐⭐⭐
+            <a href="https://www.hilton.com/en/hotels/mkzdtci-doubletree-melaka/" target="_blank">Website</a>
+            <a href="https://maps.app.goo.gl/vLJ5AJpsRoXmc2dd8" target="_blank">View Map</a>
+        </div>
+        <div class="wishlist">
+    <span class="heart" data-liked="false">♡</span>
+</div>
+    </div>
+
+<div class="card" data-price="mid">
+    <img src="bayou.jpeg" alt="Bayou Lagoon Park Resort">
+
+    <div class="card-info">
+        <h3>Bayou Lagoon Park Resort</h3>
+
+        <div class="best-for family">👨‍👩‍👧 Family Resort</div>
+
+        <p>
+            A family-friendly resort featuring water park facilities
+            suitable for leisure and long stays.
+        </p>
+
+        <div class="amenities">
+            <span>💦 Water Park</span>
+            <span>🅿️ Parking</span>
+            <span>🍴 Dining</span>
+        </div>
+
+        <div class="price">From <strong>RM 230 / night</strong></div>
+
+        <span class="location">📍 Ayer Keroh</span>
+    </div>
+
+    <div class="card-actions">
+        ⭐⭐⭐⭐☆
+        <a href="https://www.bayoulagoon.com.my/" target="_blank">Website</a>
+        <a href="https://maps.app.goo.gl/ApJjjWNfisQPpmmeA" target="_blank">View Map</a>
+    </div>
+    <div class="wishlist">
+    <span class="heart" data-liked="false">♡</span>
+</div>
+    </div>
+
+
+<div class="card" data-price="mid">
+    <img src="pines.jpeg" alt="The Pines Melaka">
+
+    <div class="card-info">
+        <h3>The Pines Melaka</h3>
+
+        <div class="best-for couple">💑 Couple Stay</div>
+
+        <p>
+            A stylish riverside hotel offering comfortable rooms
+            and scenic views of Melaka River.
+        </p>
+
+        <div class="amenities">
+            <span>📶 WiFi</span>
+            <span>🌅 River View</span>
+            <span>☕ Café</span>
+        </div>
+
+        <div class="price">From <strong>RM 260 / night</strong></div>
+
+        <span class="location">📍 Melaka City</span>
+    </div>
+
+    <div class="card-actions">
+        ⭐⭐⭐⭐☆
+        <a href="https://www.thepinesmelaka.com/" target="_blank">Website</a>
+        <a href="https://maps.app.goo.gl/iLXJjhweqrWuaHnk6" target="_blank">View Map</a>
+    </div>
+    <div class="wishlist">
+    <span class="heart" data-liked="false">♡</span>
+</div>
+</div>
+
+
+
+    <div class="card" data-price="budget">
+    <img src="homestay.jpeg" alt="Jonker Street Homestay">
+
+    <div class="card-info">
+        <h3>Jonker Street Homestay</h3>
+
+        <div class="best-for backpacker">🎒 Budget Stay</div>
+
+        <p>
+            A cosy homestay located near cultural attractions,
+            suitable for families and group travellers.
+        </p>
+
+        <div class="amenities">
+            <span>📶 WiFi</span>
+            <span>🏠 Kitchen</span>
+            <span>❄️ Aircond</span>
+        </div>
+
+        <div class="price">From <strong>RM 90 / night</strong></div>
+
+        <span class="location">📍 Jonker Street</span>
+    </div>
+
+    <div class="card-actions">
+        ⭐⭐⭐⭐☆
+        <a href="#">Website</a>
+        <a href="https://maps.app.goo.gl/vZfxzJcasahWP8x56">View Map</a>
+    </div>
+    <div class="wishlist">
+    <span class="heart" data-liked="false">♡</span>
+</div>
+</div>
+
+
+      <div class="card" data-price="budget">
+    <img src="publicbus.jpeg" alt="Public Bus Service">
+
+    <div class="card-info">
+        <h3>Public Bus Service</h3>
+
+        <div class="best-for backpacker">🚌 Low Cost Travel</div>
+
+        <p>
+            Affordable and reliable bus services connecting
+            accommodation areas to major attractions.
+        </p>
+
+        <div class="amenities">
+            <span>💰 Cheap</span>
+            <span>🗺️ Routes</span>
+            <span>⏰ Timetable</span>
+        </div>
+
+        <div class="price">From <strong>RM 2 / trip</strong></div>
+
+        <span class="location">📍 Melaka</span>
+    </div>
+
+    <div class="card-actions">
+        ⭐⭐⭐☆☆
+        <a href="#">Schedule</a>
+        <a href="https://maps.app.goo.gl/3bRxGn6PtujLz4G99">Route Map</a>
+    </div>
+    <div class="wishlist">
+    <span class="heart" data-liked="false">♡</span>
+</div>
+</div>
+
+<div class="card" data-price="mid">
+    <img src="grab.jpeg" alt="Grab E-Hailing Service">
+
+    <div class="card-info">
+        <h3>Grab (E-Hailing Service)</h3>
+
+        <div class="best-for family">🚕 Most Convenient</div>
+
+        <p>
+            Grab is the most popular e-hailing service in Melaka,
+            offering fast and comfortable door-to-door transportation
+            for tourists and families.
+        </p>
+
+        <div class="amenities">
+            <span>📱 App-Based</span>
+            <span>🕒 24/7</span>
+            <span>🚗 Door-to-Door</span>
+        </div>
+
+        <div class="price">
+            From <strong>RM 8 / trip</strong>
+        </div>
+
+        <span class="location">📍 Available Across Melaka</span>
+    </div>
+
+    <div class="card-actions">
+        ⭐⭐⭐⭐☆
+        <a href="https://www.grab.com/my/" target="_blank">Official Website</a>
+        <a href="https://www.grab.com/my/" target="_blank">View Coverage Map</a>
+    </div>
+    <div class="wishlist">
+    <span class="heart" data-liked="false">♡</span>
+</div>
+</div>
+
+    </main>
+</div>
+
+<section class="transportation">
+    <h2>Transportation in Melaka</h2>
+
+    <a href="https://www.google.com/maps/search/transportation+in+melaka"
+   target="_blank"
+   class="transport-map">
+   🗺️ Explore Transportation on Google Maps
+</a>
+
+    <p class="transport-desc">
+        Various transportation options are available to help visitors travel comfortably and efficiently around Melaka.
+    </p>
+
+    <div class="transport-grid">
+
+        <div class="transport-card">
+            <div class="transport-icon">🚌</div>
+            <h3>Public Bus</h3>
+            <span class="transport-tag">Low Cost</span>
+            <p>Panorama Melaka buses connect major attractions and public areas.</p>
+        </div>
+
+        <div class="transport-card">
+            <div class="transport-icon">🚕</div>
+            <h3>Taxi & Grab</h3>
+            <span class="transport-tag">Most Popular</span>
+            <p>Grab services are widely used for fast and convenient travel.</p>
+        </div>
+
+        <div class="transport-card">
+            <div class="transport-icon">🚗</div>
+            <h3>Car Rental</h3>
+            <span class="transport-tag">Flexible</span>
+            <p>Suitable for families and tourists planning longer stays.</p>
+        </div>
+
+        <div class="transport-card">
+            <div class="transport-icon">🚲</div>
+            <h3>Bicycle & Trishaw</h3>
+            <span class="transport-tag">Heritage Area</span>
+            <p>Ideal for exploring Melaka’s historical and cultural sites.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col about">
+            <h3>About</h3>
+            <p>
+                Welcome to your ultimate guide for exploring Melaka, a UNESCO World Heritage site
+                brimming with history and culture. We provide detailed information on must-visit
+                attractions, local cuisine, accommodation options, and shopping destinations.
+            </p>
+            <p>
+                Whether you're crafting your travel itinerary or curious about Melaka's lively
+                festivals and cultural events, we provide all the essential information and
+                insider tips to make your visit truly unforgettable.
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Search</h3>
+            <ul>
+                <li><a href="index.html">Melaka Overview</a></li>
+                <li><a href="attraction.html">Melaka Attractions</a></li>
+                <li><a href="food.html">Melaka Foods & Culture</a></li>
+                <li><a href="accommodation.html">Melaka Accomodation</a></li>
+                <li><a href="event.html">Melaka Events & Festivals</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Reference Sites</h3>
+            <ul>
+                <li><a href="https://rai.malaysia.gov.my/visit">Visit Malaysia 2026</a></li>
+                <li><a href="https://www.ibctours.com">Travel Agency Malaysia</a></li>
+                <li><a href="https://www.eventbrite.com/d/malaysia/events/">Events Malaysia</a></li>
+                <li><a href="https://www.avis.com.my">Car Rental Malaysia</a></li>
+                <li><a href="https://incube-8.com/virtual-office/?gad_source=1&gad_campaignid=15230503914&gbraid=0AAAAACihWga1Zs9yLBPYpVB9X_hrl2Cz9&gclid=EAIaIQobChMI_fj_g-uNkgMVl34PAh03Ii0bEAAYASAAEgJbZfD_BwE">Virtual Office Malaysia</a></li>
+                <li><a href="https://www.myipo.gov.my">Patent Registration Malaysia</a></li>
+                <li><a href="https://www.sumkoka.com/bagasse-container-manufacturer.html?utm_campaign=餐盒B端词-bagasse-02&utm_content=B端词-25.12.16&utm_term=bagasse+container+factory&gad_source=1&gad_campaignid=23371843894&gbraid=0AAAAAouzwTLk6c0DsCQ9jKtdN_qCwv2at&gclid=EAIaIQobChMIyrW1oeuNkgMVrewWBR3tkivCEAAYASAAEgKGKfD_BwE">Packaging Supplier Malaysia</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 Jalan-Melaka.com | Jalan-Melaka.com is an independent tourism portal
+            providing information and resources about Melaka, Malaysia.
+        </p>
+    </div>
+</footer>
+
+<script>
+let slides = document.querySelectorAll('.slides');
+let index = 0;
+setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+}, 4500);
+</script>
+
+<script>
+function updateDateTime() {
+    const now = new Date();
+
+    const dateOptions = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    };
+
+    const timeOptions = {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    };
+
+    document.getElementById("date").textContent =
+        now.toLocaleDateString('en-MY', dateOptions);
+
+    document.getElementById("time").textContent =
+        now.toLocaleTimeString('en-MY', timeOptions);
+}
+
+updateDateTime();
+setInterval(updateDateTime, 1000);
+</script>
+
+<script>
+let lastScrollTop = 0;
+const topInfo = document.querySelector('.top-info');
+
+window.addEventListener('scroll', () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop && scrollTop > 80) {
+        // scroll down → hide
+        topInfo.classList.add('hide');
+    } else {
+        // scroll up → show
+        topInfo.classList.remove('hide');
+    }
+
+    lastScrollTop = scrollTop;
+});
+</script>
+
+<script>
+const filterButtons = document.querySelectorAll('.price-filter button');
+const cards = document.querySelectorAll('.card');
+
+filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+
+        cards.forEach(card => {
+            card.style.display =
+                filter === 'all' || card.dataset.price === filter
+                ? 'block'
+                : 'none';
+        });
+    });
+});
+</script>
+
+<script>
+const buttons = document.querySelectorAll('.price-filter button');
+const note = document.getElementById('filterNote');
+
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+
+        // Remove active
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        // Update notification text
+        note.textContent = `Showing: ${btn.textContent}`;
+
+        // Show notification
+        note.classList.add('show');
+
+        // Auto hide after 2s
+        setTimeout(() => {
+            note.classList.remove('show');
+        }, 2000);
+    });
+});
+</script>
+
+<script>
+const toast = document.getElementById('toast');
+const countEl = document.getElementById('wishlistCount');
+
+function showToast(message) {
+    toast.textContent = message;
+    toast.classList.add('show');
+
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 2000);
+}
+
+function updateWishlistCount() {
+    const likedItems = document.querySelectorAll('.heart[data-liked="true"]');
+    countEl.textContent = likedItems.length;
+}
+
+document.querySelectorAll('.heart').forEach(heart => {
+    heart.addEventListener('click', () => {
+        const liked = heart.getAttribute('data-liked') === 'true';
+
+        heart.setAttribute('data-liked', !liked);
+        heart.textContent = liked ? '♡' : '❤️';
+
+        updateWishlistCount();
+        showToast(liked ? 'Removed from wishlist 💔' : 'Added to wishlist ❤️');
+    });
+});
+</script>
+
+
+</body>
+</html>

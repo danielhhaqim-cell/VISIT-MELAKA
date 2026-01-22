@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+/* ================= HEADER ================= */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(17,17,17,0.85);
+    backdrop-filter: blur(8px);
+}
+.header-container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #e67e22;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+}
+
+/* NAV BUTTON (NO LINE) */
+.navbar a {
+    position: relative;
+    padding: 10px 18px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    border-radius: 999px;
+    transition: all 0.35s ease;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* REMOVE UNDERLINE COMPLETELY */
+.navbar a::after {
+    display: none;
+}
+
+/* GRADIENT BACKGROUND */
+.navbar a::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #e67e22, #f39c12);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    z-index: -1;
+}
+
+/* HOVER EFFECT */
+.navbar a:hover::before {
+    opacity: 1;
+}
+
+.navbar a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(230,126,34,0.4);
+}
+
+/* ACTIVE PAGE */
+.navbar a.active::before {
+    opacity: 1;
+}
+
+.navbar a.active {
+    font-weight: 600;
+}
+.navbar a,
+.navbar a:hover,
+.navbar a:focus,
+.navbar a:active {
+    text-decoration: none;
+}
+
+/* ================= TOP INFO ================= */
+.top-info {
+    background: rgba(0,0,0,0.75);
+    color: #eee;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 13px;
+    transition: transform .35s ease;
+}
+.top-info.hide {
+    transform: translateY(-100%);
+}
+.top-info .divider {
+    margin: 0 10px;
+    color: #e67e22;
+}
+
+/* ================= HERO ================= */
+.hero-animated {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    animation: heroBG 15s infinite;
+    background-size: cover;
+    background-position: center;
+}
+@keyframes heroBG {
+    0% {background-image:url("img1.jpg")}
+    33% {background-image:url("img2.jpg")}
+    66% {background-image:url("img3.jpg")}
+    100% {background-image:url("img1.jpg")}
+}
+.hero-animated::before {
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+.hero-content {
+    position: relative;
+    max-width: 600px;
+}
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.search-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.search-container input,
+.search-container select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.search-container button {
+    padding: 10px 20px;
+    border: none;
+    background: #e67e22;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ================= STORY ================= */
+.story-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* ================= EXPERIENCES ================= */
+/* Keadaan asal: Tersembunyi */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+/* Keadaan bila kelas .active ditambah oleh JS */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.exp-title {
+    font-size: 42px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.exp-subtitle {
+    color: #666;
+    margin-bottom: 50px;
+}
+/* Styling untuk Button More */
+.exp-actions, .food-actions {
+    margin-top: 50px; /* Jarak dari kotak ke button */
+    display: flex;
+    justify-content: center; /* Letak button kat tengah-tengah */
+    width: 100%;
+}
+
+.butang {
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    transform: translateY(-20px);
+}
+.butang a {
+    padding: 15px 40px;
+    border: 2px solid black;
+    border-radius: 999px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: .3s;
+}
+.butang a:hover {
+    background: white;
+    color: #e67e22;
+}
+
+/* Susunan Delay (Stagger effect) */
+.reveal.active:nth-child(1) { transition-delay: 0.1s; }
+.reveal.active:nth-child(2) { transition-delay: 0.3s; }
+.reveal.active:nth-child(3) { transition-delay: 0.5s; }
+
+/* REKA BENTUK KOTAK (PASTIKAN ADA) */
+.exp {
+    position: relative;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    background: linear-gradient(180deg, #ffffff 0%, #ffdae9 100%);
+    gap: 4px;
+}
+
+.exp-section {
+    padding: 80px 40px;
+    background-color: #ffdae9; /* Warna pink latar belakang */
+    text-align: center;
+}
+
+/* Susunan Kotak (Grid) */
+.exp-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kotak sebelah menyebelah */
+    gap: 30px; /* JARAK ANTARA KOTAK */
+    max-width: 1300px;
+    margin: 40px auto 0; /* Letak tengah */
+}
+
+/* Background images manual jika ::before tidak keluar */
+.heritage { background-image: url("heritage.png"); }
+.ocean { background-image: url("ocean.png"); }
+.cruise { background-image: url("cruise.jpg"); }
+
+.exp-content {
+    padding: 30px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    width: 100%;
+    color: white;
+    z-index: 2;
+}
+
+.exp p {
+    font-size: 14px;
+    margin-top: 10px;
+    /* Kita buat p sentiasa nampak dulu untuk test */
+    opacity: 1; 
+}
+
+/* ================= FOOD SECTION ================= */
+.food-section {
+    padding: 100px 40px;
+    background: #fdfaf6; /* Warna krim lembut */
+    text-align: center;
+}
+
+.food-title {
+    font-size: 42px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.food-subtitle {
+    color: #666;
+    margin-bottom: 50px;
+}
+
+
+
+/* Styling untuk Button More */
+.exp-actions, .food-actions {
+    margin-top: 50px; /* Jarak dari kotak ke button */
+    display: flex;
+    justify-content: center; /* Letak button kat tengah-tengah */
+    width: 100%;
+}
+
+.btn-more {
+    padding: 15px 40px;
+    border: 2px solid #e67e22; /* Warna oren macam logo */
+    border-radius: 999px; /* Bagi bulat macam pil */
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.btn-more:hover {
+    background: #e67e22; /* Bila sentuh, button jadi warna oren */
+    color: white; /* Tulisan jadi putih */
+    transform: scale(1.05); /* Button besar sikit macam dia happy! */
+    box-shadow: 0 5px 15px rgba(230, 126, 34, 0.3);
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.food-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    height: 350px;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(230, 126, 34, 0.2);
+}
+
+.food-image {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.food-card:hover .food-image {
+    transform: scale(1.1);
+}
+
+.food-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.9));
+    color: white;
+    text-align: left;
+}
+
+.food-info h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #e67e22;
+}
+
+.food-info p {
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+/* ================= PLAN TRIP (VIDEO) ================= */
+.plan-trip {
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+.bg-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.plan-trip .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+}
+.plan-trip .content {
+    position: relative;
+    text-align: center;
+}
+.plan-trip h2 {
+    font-size: 48px;
+}
+.plan-buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.plan-buttons a {
+    padding: 15px 40px;
+    border: 2px solid white;
+    border-radius: 999px;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+.plan-buttons a:hover {
+    background: white;
+    color: #e67e22;
+}
+
+/* ================= FOOTER ================= */
+/* FOOTER */ 
+.footer {
+    background: #111;
+    color: #aaa;
+    padding: 70px 40px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: #aaa;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+}

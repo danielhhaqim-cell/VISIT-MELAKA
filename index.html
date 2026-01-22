@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Melaka 2026</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+
+
+<header class="header">
+    <div class="top-info">
+    🗓️ <span id="date"></span>
+    <span class="divider">|</span>
+    ⏰ <span id="time"></span>
+</div>
+    <div class="header-container">
+
+        <div class="logo">
+            📍 <span>JALAN MELAKA</span>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html" class="active">HOME</a>
+            <a href="attraction.html">ATTRACTION</a>
+            <a href="food.html">FOOD & CULTURE</a>
+            <a href="accommodation.html">ACCOMMODATION</a>
+            <a href="event.html">EVENTS</a>
+        </nav>
+
+    </div>
+</header>
+
+<!-- HERO (ANIMATED BACKGROUND) -->
+<section class="hero-animated">
+    <div class="hero-content">
+        <h1>Visit Melaka 2026</h1>
+        <p>Discover the charm of history and modern lifestyle.</p>
+
+        <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Example: hotel, food, attraction">
+    <select id="categorySelect">
+        <option value="all">All categories</option>
+        <option value="attractions">Attractions</option>
+        <option value="food">Food & Culture</option>
+        <option value="accommodation">Accommodation</option>
+        <option value="events">Events</option>
+    </select>
+    <button onclick="handleSearch()">Search</button>
+</div>
+
+</section>
+
+<div class="story">
+
+    <!-- EXPERIENCES (3 KOTAK SEBELAH-SEBELAH) -->
+    <section class="exp-section">
+         <h2 class="exp-title">Fun Experience to Explore</h2>
+        <p class="exp-subtitle">Experience the Soul of Melaka.</p>
+        <div class="butang">
+            <a href="attraction.html">Explore</a>
+            <a href="#">Stay</a>
+        </div>
+    <div class="exp heritage reveal">
+        <div class="exp-content">
+            <h3>Heritage Walk</h3>
+            <p>Step back in time at A Famosa and explore the red-hued Dutch Square.</p>
+        </div>
+    </div>
+
+    <div class="exp ocean reveal">
+        <div class="exp-content">
+            <h3>Oceanarium</h3>
+            <p>Discover Wonders Beneath the Ocean.</p>
+        </div>
+    </div>
+
+    <div class="exp cruise reveal">
+        <div class="exp-content">
+            <h3>River Cruise</h3>
+            <p>Glide through the Melaka beautifully at night.</p>
+        </div>
+    </div>
+</section>
+
+    <section class="food-section">
+    <div class="food-container">
+        <h2 class="food-title">Must-Try Melaka Delicacies</h2>
+        <p class="food-subtitle">Experience the authentic flavors of Melaka's unique heritage.</p>
+        <div class="butang">
+           <a href="food.html">Explore</a>
+            <a href="#">Stay</a>
+        </div>
+        <div class="food-grid">
+            <div class="food-card">
+                <div class="food-image" style="background-image: url('chicken-rice.jpg');"></div>
+                <div class="food-info">
+                    <h3>Chicken Rice Ball</h3>
+                    <p>The iconic Melaka specialty - fragrant rice rolled into bite-sized balls.</p>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="food-image" style="background-image: url('satay-celup.jpg');"></div>
+                <div class="food-info">
+                    <h3>Satay Celup</h3>
+                    <p>Dip fresh skewers into a boiling pot of aromatic peanut sauce.</p>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="food-image" style="background-image: url('nyonya-laksa.jpeg');"></div>
+                <div class="food-info">
+                    <h3>Nyonya Laksa</h3>
+                    <p>Rich, creamy coconut gravy with a perfect blend of spices.</p>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="food-image" style="background-image: url('cendol.jpg');"></div>
+                <div class="food-info">
+                    <h3>Gula Melaka Cendol</h3>
+                    <p>Refreshing dessert topped with authentic, smoky Gula Melaka.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="story-section plan-trip">
+    <video class="bg-video" autoplay muted loop>
+        <source src="melaka.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>Plan Your Trip</h2>
+        <p>Everything you need for your Melaka journey</p>
+        <div class="plan-buttons">
+            <a href="accommodation.html">Explore</a>
+            <a href="#">Stay</a>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col about">
+            <h3>About</h3>
+            <p>
+                Welcome to your ultimate guide for exploring Melaka, a UNESCO World Heritage site
+                brimming with history and culture. We provide detailed information on must-visit
+                attractions, local cuisine, accommodation options, and shopping destinations.
+            </p>
+            <p>
+                Whether you're crafting your travel itinerary or curious about Melaka's lively
+                festivals and cultural events, we provide all the essential information and
+                insider tips to make your visit truly unforgettable.
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Search</h3>
+            <ul>
+                <li><a href="index.html">Melaka Overview</a></li>
+                <li><a href="attraction.html">Melaka Attractions</a></li>
+                <li><a href="food.html">Melaka Foods</a></li>
+                <li><a href="accommodation.html">Melaka Culture</a></li>
+                <li><a href="event.html">Melaka Events & Festivals</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Reference Sites</h3>
+            <ul>
+                <li><a href="https://rai.malaysia.gov.my/visit">Visit Malaysia 2026</a></li>
+                <li><a href="https://www.ibctours.com">Travel Agency Malaysia</a></li>
+                <li><a href="https://www.eventbrite.com/d/malaysia/events/">Events Malaysia</a></li>
+                <li><a href="https://www.avis.com.my">Car Rental Malaysia</a></li>
+                <li><a href="https://incube-8.com/virtual-office/?gad_source=1&gad_campaignid=15230503914&gbraid=0AAAAACihWga1Zs9yLBPYpVB9X_hrl2Cz9&gclid=EAIaIQobChMI_fj_g-uNkgMVl34PAh03Ii0bEAAYASAAEgJbZfD_BwE">Virtual Office Malaysia</a></li>
+                <li><a href="https://www.myipo.gov.my">Patent Registration Malaysia</a></li>
+                <li><a href="https://www.sumkoka.com/bagasse-container-manufacturer.html?utm_campaign=餐盒B端词-bagasse-02&utm_content=B端词-25.12.16&utm_term=bagasse+container+factory&gad_source=1&gad_campaignid=23371843894&gbraid=0AAAAAouzwTLk6c0DsCQ9jKtdN_qCwv2at&gclid=EAIaIQobChMIyrW1oeuNkgMVrewWBR3tkivCEAAYASAAEgKGKfD_BwE">Packaging Supplier Malaysia</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 Jalan-Melaka.com | Jalan-Melaka.com is an independent tourism portal
+            providing information and resources about Melaka, Malaysia.
+        </p>
+    </div>
+</footer>
+
+<script>
+function updateDateTime() {
+    const now = new Date();
+
+    const dateOptions = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    };
+
+    const timeOptions = {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    };
+
+    document.getElementById("date").textContent =
+        now.toLocaleDateString('en-MY', dateOptions);
+
+    document.getElementById("time").textContent =
+        now.toLocaleTimeString('en-MY', timeOptions);
+}
+
+updateDateTime();
+setInterval(updateDateTime, 1000);
+</script>
+
+<script>
+let lastScrollTop = 0;
+const topInfo = document.querySelector('.top-info');
+
+window.addEventListener('scroll', () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop && scrollTop > 80) {
+        // scroll down → hide
+        topInfo.classList.add('hide');
+    } else {
+        // scroll up → show
+        topInfo.classList.remove('hide');
+    }
+
+    lastScrollTop = scrollTop;
+});
+</script>
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+        }
+    });
+}, {
+    threshold: 0.25
+});
+
+reveals.forEach(reveal => observer.observe(reveal));
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const observerOptions = {
+        threshold: 0.15 // Akan muncul bila 15% bahagian kotak masuk skrin
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+                // Berhenti memerhati selepas elemen muncul
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Cari semua elemen dengan kelas .reveal
+    const elements = document.querySelectorAll(".reveal");
+    elements.forEach(el => observer.observe(el));
+});
+</script>
+
+<script>
+function handleSearch() {
+    const keyword = document.getElementById("searchInput").value.toLowerCase();
+    const category = document.getElementById("categorySelect").value;
+
+    if (!keyword && category === "all") {
+        alert("Please enter a keyword or select a category");
+        return;
+    }
+
+    // Redirect ikut kategori
+    if (category === "attractions") {
+        window.location.href = "attraction.html";
+    } else if (category === "food") {
+        window.location.href = "food.html";
+    } else if (category === "accommodation") {
+        window.location.href = "accommodation.html";
+    } else if (category === "events") {
+        window.location.href = "event.html";
+    } else {
+        // fallback ikut keyword
+        if (keyword.includes("food")) {
+            window.location.href = "food.html";
+        } else if (keyword.includes("hotel")) {
+            window.location.href = "accommodation.html";
+        } else if (keyword.includes("event")) {
+            window.location.href = "event.html";
+        } else {
+            window.location.href = "attraction.html";
+        }
+    }
+}
+</script>
+
+
+
+</body>
+</html>

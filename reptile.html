@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reptile Sanctuary Melaka – Melaka Tourism</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="reptile.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <!-- Bootstrap 4.6 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <!-- Smooth Scroll -->
+  <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body>
+
+   <!-- Header -->
+<header class="header">
+
+  <!-- TOP BAR (DATE & TIME) -->
+  <div class="top-info">
+    🗓️ <span id="date"></span>
+    <span class="divider">|</span>
+    ⏰ <span id="time"></span>
+  </div>
+
+  <!-- LOGO + NAVBAR -->
+  <div class="header-container">
+    <div class="logo">
+      📍 <span>JALAN MELAKA</span>
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="attraction.html" class="active">Attraction</a>
+      <a href="food.html">Food & Culture</a>
+      <a href="accommodation.html">Accommodation</a>
+      <a href="event.html">Events</a>
+    </nav>
+  </div>
+
+</header>
+
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Reptile Sanctuary Melaka</h1>
+      <p>The Reptile Sanctuary Melaka, located in the heart of Melaka, is an exciting and educational destination for animal lovers, especially those fascinated by reptiles.</p>
+      <div class="actions">
+        <a href="#" class="btn">Favorite</a>
+        <a href="#company-reviews" class="btn btn-outline">Add Review</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- Navigation Links -->
+    <div class="page-menu">
+      <a href="#description"><i class="la la-file-text"></i> Details</a>
+      <a href="#company-reviews"><i class="la la-comments"></i> Reviews</a>
+      <a href="#map-location"><i class="la la-map-marker"></i> Map Location</a>
+    </div>
+
+    <!-- Description -->
+    <div id="description" class="section">
+      <div class="info-grid">
+        <div class="description-content">
+          <h2>Description</h2>
+          <p>The Reptile Sanctuary Melaka, located in the heart of Melaka, is an exciting and educational destination for animal lovers, especially those fascinated by reptiles. This sanctuary is home to a wide variety of reptile species, offering visitors an up-close experience with some of the world’s most intriguing creatures.</p><br>
+          <p>The sanctuary is known for its collection of snakes, lizards, turtles, crocodiles, and many other reptiles. It provides an opportunity to learn about the different types of reptiles that inhabit the region, both native and exotic. The sanctuary is dedicated to educating visitors on the importance of reptiles in ecosystems, as well as the conservation efforts required to protect these often misunderstood animals.</p><br>
+          <p>Among the popular attractions in the sanctuary are the King Cobra, Reticulated Python, and the impressive saltwater crocodiles. Visitors can also participate in interactive experiences, such as feeding the turtles and observing reptile handling demonstrations. It is a great place for families, students, and wildlife enthusiasts to learn and appreciate these cold-blooded creatures.</p><br>
+          <p>The sanctuary is designed to provide an enriching experience in a safe and controlled environment. With informative signage and trained staff, visitors can gain knowledge about reptile behavior, habitat, and the significance of preserving biodiversity.</p><br>
+          <p>Situated in a scenic area, the Reptile Sanctuary Melaka is more than just a place to view reptiles—it’s an educational hub focused on raising awareness about wildlife conservation and the preservation of endangered reptile species.</p>
+        </div>
+
+        <!-- Sidebar Kanan -->
+        <div class="details-card">
+          <!-- Static Map -->
+          <div onclick="window.open('https://maps.google.com/?q=2.2050,102.2580', '_blank')" style="cursor: pointer; margin-bottom: 15px;">
+            <img 
+              src="https://maps.googleapis.com/maps/api/staticmap?center=2.2050,102.2580&zoom=14&size=300x150&markers=color:red%7C2.2050,102.2580&key=AIzaSyBXuNqPQJcsIt-neWDixl8MbYYYMmShL4A" 
+              alt="Map to Reptile Sanctuary Melaka"
+              width="100%"
+              style="border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"
+            >
+          </div>
+
+          <div class="detail-item">
+            <div class="detail-label">Location</div>
+            <div>Reptile Sanctuary Melaka,<br>Jalan Taman Mini, 75450 Melaka, Malaysia</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-label">Phone</div>
+            <div>+606-288 0399</div>
+          </div>
+
+          <!-- Opening Hours -->
+          <div class="detail-item" style="margin-top: 20px;">
+            <div class="detail-label"><i class="la la-clock-o"></i> Opening Hours</div>
+            <table class="opening-hours" style="width:100%; border-collapse:collapse; font-size:0.9rem; margin-top:8px;">
+              <tr><td>Monday - Sunday</td><td>9:00 AM - 6:00 PM</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Business Reviews -->
+    <div class="content-box" id="company-reviews">
+      <div class="content-box-title">
+        <h3><i class="la la-comments"></i> BUSINESS REVIEWS</h3>
+      </div>
+      <div class="content-box-body">
+        <div class="review-scorecard">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-5">
+                  <span class="heading">User Rating</span>
+                </div>
+                <div class="col-md-7" style="margin-top: 15px">
+                  <div class="rating">
+                    <span class="star"><i class="la la-star"></i></span>
+                    <span class="star"><i class="la la-star"></i></span>
+                    <span class="star"><i class="la la-star"></i></span>
+                    <span class="star"><i class="la la-star"></i></span>
+                    <span class="star"><i class="la la-star"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p id="review-stats-text">0 average based on 0 Reviews</p>
+            </div>
+            <div class="col-md-4" style="padding: 30px;">
+              <a class="add-review-link btn btn-sm btn-success" href="javascript:void(0)">
+                Add New <i class="la la-plus"></i>
+              </a>
+            </div>
+          </div>
+
+          <hr style="border: 3px solid #f1f1f1; margin: 25px 0;">
+
+          <!-- Star Rating Bars -->
+          <div class="row align-items-center mb-3">
+            <div class="col-md-2">5 Star</div>
+            <div class="col-md-8">
+              <div class="bar-container">
+                <div class="bar-5" style="width: 0%;"></div>
+              </div>
+            </div>
+            <div class="col-md-2 text-right">0</div>
+          </div>
+          <div class="row align-items-center mb-3">
+            <div class="col-md-2">4 Star</div>
+            <div class="col-md-8">
+              <div class="bar-container">
+                <div class="bar-4" style="width: 0%;"></div>
+              </div>
+            </div>
+            <div class="col-md-2 text-right">0</div>
+          </div>
+          <div class="row align-items-center mb-3">
+            <div class="col-md-2">3 Star</div>
+            <div class="col-md-8">
+              <div class="bar-container">
+                <div class="bar-3" style="width: 0%;"></div>
+              </div>
+            </div>
+            <div class="col-md-2 text-right">0</div>
+          </div>
+          <div class="row align-items-center mb-3">
+            <div class="col-md-2">2 Star</div>
+            <div class="col-md-8">
+              <div class="bar-container">
+                <div class="bar-2" style="width: 0%;"></div>
+              </div>
+            </div>
+            <div class="col-md-2 text-right">0</div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-2">1 Star</div>
+            <div class="col-md-8">
+              <div class="bar-container">
+                <div class="bar-1" style="width: 0%;"></div>
+              </div>
+            </div>
+            <div class="col-md-2 text-right">0</div>
+          </div>
+        </div>
+
+        <div class="clear" style="clear: both;"></div>
+        <br />
+        <div id="reviews-list" style="margin-top: 20px;"></div>
+      </div>
+    </div>
+
+    <!-- Review Form Modal -->
+    <div id="review-modal" class="modal-overlay" style="display:none;">
+      <div class="modal-box">
+        <div class="modal-header">
+          <h3>Add Your Review</h3>
+          <span class="close-modal">&times;</span>
+        </div>
+        <div class="modal-body">
+          <form id="review-form">
+            <div class="form-group">
+              <label>Your Rating:</label><br>
+              <div class="star-rating-input">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+                <input type="hidden" name="rating" id="user-rating-input" value="0" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="review-name">Name:</label>
+              <input type="text" id="review-name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="review-email">Email:</label>
+              <input type="email" id="review-email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="review-comment">Your Review:</label>
+              <textarea id="review-comment" name="comment" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Submit Review</button>
+            <button type="button" class="btn btn-outline close-modal-btn">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAP LOCATION -->
+    <div id="map-location" class="section">
+      <h3><i class="la la-map-marker"></i> Map Location</h3>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.15!2d102.2580!3d2.2050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1f1c8c9b5e9b1%3A0x4d6f7b8a5a9e6e1a!2sReptile%20Sanctuary%20Melaka!5e0!3m2!1sen!2smy!4v1710000000000!5m2!1sen!2smy" 
+          width="100%" 
+          height="400" 
+          style="border:0; border-radius: 8px;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+      <p style="margin-top: 10px;"><a href="https://maps.google.com?daddr=2.2050,102.2580" target="_blank">View Larger Map & Directions</a></p>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col about">
+            <h3>About</h3>
+            <p>
+                Welcome to your ultimate guide for exploring Melaka, a UNESCO World Heritage site
+                brimming with history and culture. We provide detailed information on must-visit
+                attractions, local cuisine, accommodation options, and shopping destinations.
+            </p>
+            <p>
+                Whether you're crafting your travel itinerary or curious about Melaka's lively
+                festivals and cultural events, we provide all the essential information and
+                insider tips to make your visit truly unforgettable.
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Search</h3>
+            <ul>
+                <li><a href="index.html">Melaka Overview</a></li>
+                <li><a href="attraction.html">Melaka Attractions</a></li>
+                <li><a href="food.html">Melaka Foods</a></li>
+                <li><a href="accommodation.html">Melaka Culture</a></li>
+                <li><a href="event.html">Melaka Events & Festivals</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Reference Sites</h3>
+            <ul>
+                <li><a href="https://rai.malaysia.gov.my/visit">Visit Malaysia 2026</a></li>
+                <li><a href="https://www.ibctours.com">Travel Agency Malaysia</a></li>
+                <li><a href="https://www.eventbrite.com/d/malaysia/events/">Events Malaysia</a></li>
+                <li><a href="https://www.avis.com.my">Car Rental Malaysia</a></li>
+                <li><a href="https://incube-8.com/virtual-office/?gad_source=1&gad_campaignid=15230503914&gbraid=0AAAAACihWga1Zs9yLBPYpVB9X_hrl2Cz9&gclid=EAIaIQobChMI_fj_g-uNkgMVl34PAh03Ii0bEAAYASAAEgJbZfD_BwE">Virtual Office Malaysia</a></li>
+                <li><a href="https://www.myipo.gov.my">Patent Registration Malaysia</a></li>
+                <li><a href="https://www.sumkoka.com/bagasse-container-manufacturer.html?utm_campaign=餐盒B端词-bagasse-02&utm_content=B端词-25.12.16&utm_term=bagasse+container+factory&gad_source=1&gad_campaignid=23371843894&gbraid=0AAAAAouzwTLk6c0DsCQ9jKtdN_qCwv2at&gclid=EAIaIQobChMIyrW1oeuNkgMVrewWBR3tkivCEAAYASAAEgKGKfD_BwE">Packaging Supplier Malaysia</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 Jalan-Melaka.com | Jalan-Melaka.com is an independent tourism portal
+            providing information and resources about Melaka, Malaysia.
+        </p>
+    </div>
+</footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Buka modal
+    document.querySelector('.add-review-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('review-modal').style.display = 'flex';
+    });
+
+    // Tutup modal
+    document.querySelectorAll('.close-modal, .close-modal-btn').forEach(el => {
+      el.addEventListener('click', () => {
+        document.getElementById('review-modal').style.display = 'none';
+      });
+    });
+
+    // Pilih bintang
+    let selectedRating = 0;
+    const stars = document.querySelectorAll('.star-rating-input .star');
+    stars.forEach(star => {
+      star.addEventListener('click', function() {
+        selectedRating = parseInt(this.getAttribute('data-value'));
+        document.getElementById('user-rating-input').value = selectedRating;
+        stars.forEach(s => s.classList.remove('active'));
+        for (let i = 0; i < selectedRating; i++) {
+          stars[i].classList.add('active');
+        }
+      });
+
+      star.addEventListener('mouseover', function() {
+        const value = parseInt(this.getAttribute('data-value'));
+        stars.forEach((s, idx) => {
+          s.style.color = idx < value ? '#ffd700' : '#ccc';
+        });
+      });
+
+      star.addEventListener('mouseleave', function() {
+        stars.forEach((s, idx) => {
+          s.style.color = idx < selectedRating ? '#ffd700' : '#ccc';
+        });
+      });
+    });
+
+    // Hantar review
+    document.getElementById('review-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (selectedRating === 0) {
+        alert('Please select a rating.');
+        return;
+      }
+
+      const review = {
+        name: document.getElementById('review-name').value,
+        email: document.getElementById('review-email').value,
+        comment: document.getElementById('review-comment').value,
+        rating: selectedRating,
+        date: new Date().toLocaleDateString(),
+        id: Date.now()
+      };
+
+      let reviews = JSON.parse(localStorage.getItem('reptile_reviews') || '[]');
+      reviews.unshift(review);
+      localStorage.setItem('reptile_reviews', JSON.stringify(reviews));
+
+      loadReviews();
+      document.getElementById('review-modal').style.display = 'none';
+      document.getElementById('review-form').reset();
+      selectedRating = 0;
+      stars.forEach(s => s.classList.remove('active'));
+    });
+
+    // Muat ulasan
+    function loadReviews() {
+      const container = document.getElementById('reviews-list');
+      const stats = [0,0,0,0,0];
+      let totalRating = 0, totalReviews = 0;
+
+      const reviews = JSON.parse(localStorage.getItem('reptile_reviews') || '[]');
+
+      if (reviews.length === 0) {
+        container.innerHTML = '<p>There are no reviews at the moment</p>';
+        updateRatingBars(stats, 0, 0);
+        return;
+      }
+
+      let html = '';
+      reviews.forEach(r => {
+        html += `
+          <div class="review-item" style="border-bottom:1px solid #eee; padding:15px 0; position:relative;">
+            <div class="review-header" style="display:flex; justify-content:space-between; margin-bottom:8px;">
+              <strong>${r.name}</strong>
+              <span>${r.date}</span>
+            </div>
+            <div class="review-rating" style="color:#ffd700; margin-bottom:8px;">${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</div>
+            <p>${r.comment}</p>
+            <button onclick="deleteReview(${r.id})" style="position:absolute; top:5px; right:5px; background:none; border:none; font-size:1rem; color:#999; cursor:pointer;" title="Delete this review">×</button>
+          </div>
+        `;
+        stats[r.rating - 1]++;
+        totalRating += r.rating;
+        totalReviews++;
+      });
+
+      container.innerHTML = html;
+      const avg = totalReviews ? (totalRating / totalReviews).toFixed(1) : 0;
+      updateRatingBars(stats, avg, totalReviews);
+    }
+
+    // Kemas kini statistik
+    function updateRatingBars(stats, avg, total) {
+      const statsText = document.getElementById('review-stats-text');
+      if (statsText) statsText.textContent = `${avg} average based on ${total} Reviews`;
+
+      const rows = document.querySelectorAll('.review-scorecard .row.align-items-center');
+      for (let i = 0; i < rows.length; i++) {
+        const count = stats[4 - i]; // 5,4,3,2,1 → index 4,3,2,1,0
+        const countEl = rows[i].querySelector('.col-md-2.text-right');
+        if (countEl) countEl.textContent = count;
+
+        const maxCount = Math.max(...stats);
+        const width = maxCount ? (count / maxCount * 100) : 0;
+        const bar = rows[i].querySelector('.bar-container div');
+        if (bar) bar.style.width = width + '%';
+      }
+    }
+
+    // Padam review
+    function deleteReview(id) {
+      let reviews = JSON.parse(localStorage.getItem('reptile_reviews') || '[]');
+      reviews = reviews.filter(r => r.id !== id);
+      localStorage.setItem('reptile_reviews', JSON.stringify(reviews));
+      loadReviews();
+    }
+
+    window.addEventListener('load', loadReviews);
+  </script>
+
+<script>
+function updateDateTime() {
+    const now = new Date();
+
+    const dateOptions = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    };
+
+    const timeOptions = {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    };
+
+    document.getElementById("date").textContent =
+        now.toLocaleDateString('en-MY', dateOptions);
+
+    document.getElementById("time").textContent =
+        now.toLocaleTimeString('en-MY', timeOptions);
+}
+
+updateDateTime();
+setInterval(updateDateTime, 1000);
+</script>
+
+</body>
+</html>
